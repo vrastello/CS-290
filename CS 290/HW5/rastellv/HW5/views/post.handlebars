@@ -1,0 +1,36 @@
+<h1>POST Request Recieved</h1>
+<br>
+<table>
+    <thead>
+    <tr>
+        <th style="border-style: solid;">Query Parameter Name</th>
+        <th style="border-style: solid;">Query Parameter Value</th>
+    </tr>
+    </thead>
+    <tbody>
+  {{#each postQList}}
+    <tr>
+    <td style="border-style: solid;">{{this.name}}</td> 
+    <td style="border-style: solid;">{{this.value}}</td>
+    </tr>
+  {{/each}}
+  </tbody>
+</table>
+<br>
+<br>
+<table>
+    <thead>
+    <tr>
+        <th style="border-style: solid;">Body Property Name</th>
+        <th style="border-style: solid;">Body Property Value</th>
+    </tr>
+    </thead>
+    <tbody>
+  {{#each postBodyList}}
+    <tr>
+    <td style="border-style: solid;">{{this.name}}</td> 
+    <td style="border-style: solid;">{{this.value}}</td>
+    </tr>
+  {{/each}}
+  </tbody>
+</table>

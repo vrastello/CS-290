@@ -1,0 +1,40 @@
+table, th, td {
+    border: 2px inset black;
+}
+
+td {
+    text-align: center;
+}
+
+tbody tr:nth-of-type(2n) {
+    background-color: cadetblue;
+}
+
+tbody tr:nth-of-type(2n+1) {
+    background-color: darkgoldenrod;
+}
+
+ul {
+    position: relative;
+    margin: 0px;
+}
+
+.outer-content {
+    background-color: pink;
+    position: relative;
+    top: 20px;
+    width: 75%;
+    height: 60px;
+    margin-bottom: 30px;
+}
+
+.inner-content {
+    background-color: royalblue;
+    position: absolute;
+    text-align: center;
+    width: 75%;
+    height: 20px;
+    top: 20px;
+    left: 12.5%;
+}
+
