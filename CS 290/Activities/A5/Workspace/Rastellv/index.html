@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Weather App & Post Device</title>
+  </head>
+  <body>
+      <form>
+          <fieldset>
+              <legend style="font-size:x-large;">Weather App</legend>
+              <p>Specify Country</p>
+              <label for="countryCode">Country Code</label>
+              <input type="text" name="countryCode" id="countryCode">
+              <p>Input one of the following:</p>
+              <label for="zipCode">ZIP Code</label>
+              <input type="text" name="zipCode" id="zipCode">
+              <input type="submit" id="zipSubmit">
+              <p>OR</p>
+              <label for="city">City</label>
+              <input type="text" name="city" id="city">
+              <input type="submit" id="citySubmit">
+              <div>
+                <h2>Current Weather</h2>
+                <ul>
+                    <li><span>Location: </span><span id="location"></span></li>
+                    <li><span>Temperature: </span><span id="temp"></span></li>
+                    <li><span>Humidity: </span><span id="humid"></span></li>
+                    <li><span>Weather Type: </span><span id="type"></span></li>
+                </ul>
+            </div>
+          </fieldset>
+      </form>
+      <br>
+      <form action="">
+          <fieldset>
+              <br>
+              <legend style="font-size: larger;">Post And Return String</legend>
+              <label for="post">Your Message</label>
+              <input type="text" name="message" id="message">
+              <input type="submit" id="msgSubmit">
+              <div>
+                  <h3>Returned data</h3>
+                  <ul>
+                      <li><span id="returned"></span></li>
+                  </ul>
+              </div>
+          </fieldset>
+      </form>
+      <script src="script.js"></script>
+  </body>
+</html>
